@@ -1,0 +1,23 @@
+{
+  "name": "ava-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkdo/ava-examples.git"
+  },
+  "author": "Clark Du",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarkdo/ava-examples/issues"
+  },
+  "homepage": "https://github.com/clarkdo/ava-examples#readme"
+}
