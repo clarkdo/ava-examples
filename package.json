@@ -3,12 +3,49 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  },
   "devDependencies": {
-    "ava": "^0.14.0"
+    "ava": "^0.14.0",
+    "babel-core": "^6.8.0",
+    "babel-preset-react": "^6.5.0",
+    "enzyme": "^2.3.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.0",
+    "eslint-plugin-react": "^5.1.1",
+    "jsdom": "^7.2.2",
+    "react-addons-test-utils": "^15.0.2",
+    "sinon": "^1.17.4",
+    "xo": "^0.15.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/*test.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "xo": {
+    "space": 2,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "babel/object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava -v",
+    "test:watch": "xo && ava --watch"
   },
   "repository": {
     "type": "git",
